@@ -1,0 +1,31 @@
+<div data-role="view" data-title="Profile" data-layout="main" data-model="app.profile" data-show="app.profile.onShow" data-after-show="app.profile.afterShow">
+	<div id="profileModel" class="form-view">
+		<form>
+			<ul class="form-content" data-role="listview" data-style="inset">
+				<li>
+					<p>
+						<span class=bold>User Description</span>
+						<br>
+						<span class="blue" data-bind="text: profileModel.userDetails.opcUserDescription "></span>
+					</p>
+				</li>
+				<br>
+				<li>
+					<p>
+						<span class=bold>User Email</span>
+						<br>
+						<span class="blue" data-bind="text: profileModel.userDetails.opcUserEmail "></span>
+					</p>
+				</li>
+				<br>
+				<li>
+					<p>
+						<span class=bold>User Language</span>
+						<br>
+						<span class="blue" data-bind="text: profileModel.userDetails.opcUserLanguage "></span>
+					</p>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>

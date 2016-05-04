@@ -1,0 +1,37 @@
+<div data-role="view" data-title="Movie Detail" data-layout="main" data-model="app.detail" data-show="app.detail.onShow" data-after-show="app.detail.afterShow">
+	<div id="detailModel" class="form-view">
+		<ul class="form-content" data-role="listview">
+			<li>
+				<p>
+					<span class=bold>Movie Title</span><br>
+					<span data-bind="text: detailModel.movieDetails.iopcMovieTitle"></span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=bold>Movie Year</span><br>
+					<span data-bind="text: detailModel.movieDetails.iopiMovieYear"></span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=bold>Movie Type</span><br>
+					<span data-bind="text: detailModel.movieDetails.opcMovieTypeKey"></span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=bold>Runtime</span><br>
+					<span data-bind="text: detailModel.movieDetails.opiRuntime"></span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=bold>Age Restriction</span><br>
+					<span data-bind="text: detailModel.movieDetails.opiAgeRestriction"></span>
+					<span data-bind="text: detailModel.movieDetails.opcAgeReason"></span>
+				</p>
+			</li>
+		</ul>
+	</div>
+</div>

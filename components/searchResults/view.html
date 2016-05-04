@@ -1,0 +1,18 @@
+<div data-role="view" data-title="Search Results" data-layout="main" data-model="app.searchResults" data-reload="true" data-show="app.searchResults.onShow" data-after-show="app.searchResults.afterShow">
+	<div id="searchResultsModel" class="form-view">
+		
+		<!-- Define the movie detail template first -->
+		<script type="text/x-kendo-template" id="detail-template">
+		
+			<div class="item detail" onclick="app.searchResults.searchResultsModel.viewMovieDetail(#:dMovieObj#)">
+				<h2>#:cMovieTitle# (#:iMovieYear#)</h2>
+				<!-- #:cMovieTypeLabel# #:iAgeRestriction# #:cAgeReason# -->
+			</div>
+			
+		</script>
+		
+		
+		<ul id="movieResults" data-source="window.ttMovie" data-role="listview" data-template="detail-template"></ul>
+		
+	</div>
+</div>

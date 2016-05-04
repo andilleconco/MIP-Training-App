@@ -1,0 +1,29 @@
+<div data-role="view" data-title="Search" data-layout="main" data-model="app.search" data-show="app.search.onShow" data-after-show="app.search.afterShow">
+	<div id="searchModel" class="form-view">
+		<form>
+			<ul class="form-content" data-role="listview">   <!-- data-style="inset" -->
+				<li>
+					<label>Movie Title
+						<input data-bind="value: searchModel.fields.movieTitle" type="text">
+					</label>
+				</li>
+				<br>
+				<li>
+					<label>Year From
+						<input data-bind="value: searchModel.fields.yearFrom" type="number">
+					</label>
+				</li>
+				<br>
+				<li>
+					<label>Year To
+						<input data-bind="value: searchModel.fields.yearTo" type="number">
+					</label>
+				</li>
+				<br>
+			</ul>
+			<div class="button-group">
+				<a class="primary" data-role="button" data-bind="events: { click: searchModel.search }">Search</a>
+			</div>
+		</form>
+	</div>
+</div>
